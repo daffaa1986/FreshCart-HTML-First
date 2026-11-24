@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" role="img" aria-label="Hasil laut segar FreshCart">
+  <rect width="400" height="300" rx="24" fill="#e6eeff"/>
+  <path d="M40 150 Q120 80 230 150 Q120 220 40 150 Z" fill="#15803d"/>
+  <path d="M230 150 L330 100 L330 200 Z" fill="#00652c"/>
+  <circle cx="95" cy="150" r="10" fill="#f8f9ff"/>
+  <path d="M250 120 L290 140 M250 180 L290 160" stroke="#f8f9ff" stroke-width="6" stroke-linecap="round" opacity="0.6"/>
+  <text x="200" y="245" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="700" fill="#121c2a">Hasil Laut Segar</text>
+  <text x="200" y="270" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="13" fill="#3f493f">FreshCart · Ilustrasi Banner</text>
+</svg>

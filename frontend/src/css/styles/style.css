@@ -1,0 +1,67 @@
+/*
+ * FreshCart — Additional styling and override layer.
+ *
+ * Load order (see src/entries/*.js):
+ *   1. tailwind.css (legacy)   — @tailwind base/components/utilities
+ *   2. reset.css     (legacy)   — box-sizing, margins, media elements
+ *   3. tokens.css    (legacy)   — --fc-* design tokens
+ *   4. global.css    (legacy)   — body, scrollbars, focus-visible
+ *   5. components.css(legacy)   — .fc-toast, .fc-filter-chip, ...
+ *   6. responsive.css(legacy)   — mobile gutter / toast
+ *   7. pages/catalog.css or pages/commerce.css (legacy, page-specific)
+ *   8. styles/style.css (THIS FILE) — loaded last on purpose
+ *
+ * NOTE: This file intentionally does NOT re-declare Tailwind directives,
+ * reset rules, or legacy component styles. It only carries additional
+ * rules and intentional overrides that need to win over the legacy layer.
+ */
+
+/* ===== Phase 5A.1 — Header clearance & logo safety ===== */
+/* The fixed header (top bar + main row + category nav) is taller than the
+   legacy pt-32 (8rem) used by the Home page, and placeholder pages relied on
+   py-10. Give every page a uniform, sufficient top clearance. */
+main#konten-utama {
+  padding-top: 9rem;
+}
+
+/* Safety net: keep header brand logos bounded even if a class is purged. */
+header img[alt="FreshCart Brand Logo"] {
+  max-height: 2rem;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ===== Shared layout corrections (additional layer) ===== */
+/* Preserves the behaviour previously duplicated inline in Home and
+   Product Listing: the first/last child of <main> should not add
+   extra top/bottom spacing. Kept !important as a deliberate override. */
+main > :first-child {
+  margin-top: 0 !important;
+}
+
+main > :last-child {
+  margin-bottom: 0 !important;
+}
+
+/* ===== Accessibility: skip link ===== */
+/* Visually hidden until focused; lets keyboard/AT users bypass header/nav
+   and land on <main id="konten-utama">. */
+.skip-link {
+  position: absolute;
+  left: .75rem;
+  top: -5rem;
+  z-index: 100;
+  padding: .6rem .95rem;
+  border-radius: .5rem;
+  background: var(--fc-primary);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: top .15s ease;
+}
+
+.skip-link:focus-visible {
+  top: .5rem;
+  outline: 2px solid var(--fc-secondary);
+  outline-offset: 2px;
+}

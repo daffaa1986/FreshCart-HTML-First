@@ -1,0 +1,21 @@
+/* FreshCart — Recipes page additions (Phase 5A.6).
+   Loaded after the shared layers and styles/style.css. Tailwind utilities are
+   provided by the shared entries; this file only holds small page-specific
+   refinements that are easier to express as plain CSS. */
+
+#recipes-root .line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+#recipes-root select {
+  appearance: auto;
+}
+
+@media (max-width: 640px) {
+  #recipes-root [role='dialog'] {
+    border-radius: 0.75rem;
+  }
+}

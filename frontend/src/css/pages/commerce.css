@@ -1,0 +1,5 @@
+.fc-commerce-panel { background:#fff; border:1px solid #e6eeff; border-radius:1rem; padding:1.25rem; }
+
+#order-history-root summary::-webkit-details-marker { display:none; }
+#order-history-root details[open] summary { padding-bottom:1rem; border-bottom:1px solid #dee9fc; }
+#order-history-root summary:focus-visible { outline:2px solid #00652c; outline-offset:3px; border-radius:.5rem; }

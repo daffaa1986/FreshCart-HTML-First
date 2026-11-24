@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "tertiary": "#4e5a53", "on-tertiary-container": "#eaf7ee", "error-container": "#ffdad6", "secondary-fixed": "#6bff8f", "outline-variant": "#becabc", "on-secondary-fixed-variant": "#005321", "on-surface": "#121c2a", "primary-container": "#15803d", "background": "#f8f9ff", "primary": "#00652c", "surface-bright": "#f8f9ff", "on-primary-container": "#d3ffd5", "tertiary-fixed-dim": "#bdcac1", "surface-tint": "#006d30", "on-secondary": "#ffffff", "on-secondary-container": "#007432", "surface-container-lowest": "#ffffff", "on-secondary-fixed": "#002109", "on-tertiary": "#ffffff", "tertiary-fixed": "#d9e6dd", "on-surface-variant": "#3f493f", "surface": "#f8f9ff", "on-background": "#121c2a", "tertiary-container": "#66726b", "primary-fixed-dim": "#79db8d", "on-tertiary-fixed-variant": "#3e4943", "outline": "#6f7a6e", "inverse-surface": "#27313f", "on-primary-fixed-variant": "#005323", "surface-variant": "#d9e3f6", "surface-container-highest": "#d9e3f6", "on-primary": "#ffffff", "error": "#ba1a1a", "on-primary-fixed": "#00210a", "inverse-primary": "#79db8d", "on-error": "#ffffff", "surface-container-low": "#eff4ff", "surface-dim": "#d0dbed", "surface-container-high": "#dee9fc", "inverse-on-surface": "#eaf1ff", "on-error-container": "#93000a", "secondary-fixed-dim": "#4ae176", "primary-fixed": "#95f8a7", "secondary": "#006e2f", "on-tertiary-fixed": "#131e19", "secondary-container": "#6bff8f", "surface-container": "#e6eeff" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1.5rem", "gutter-mobile": "0.75rem", "margin": "2rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-md": "1rem", "space-lg": "1.5rem", "space-xl": "2rem" }, "fontFamily": { "headline-lg": ["Inter"], "display-hero": ["Inter"], "headline-md": ["Inter"], "currency-md": ["Inter"], "title-md": ["Inter"], "body-sm": ["Inter"], "body-md": ["Inter"], "headline-lg-mobile": ["Inter"], "body-lg": ["Inter"], "headline-sm": ["Inter"], "title-sm": ["Inter"], "display-hero-mobile": ["Inter"], "label-caption": ["Inter"], "currency-lg": ["Inter"], "label-badge": ["Inter"] }, "fontSize": { "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "currency-md": ["16px", { "lineHeight": "22px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "600" }], "body-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.01em", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-lg-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-lg": ["16px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "title-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0em", "fontWeight": "600" }], "display-hero-mobile": ["30px", { "lineHeight": "38px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "label-caption": ["10px", { "lineHeight": "14px", "letterSpacing": "0.02em", "fontWeight": "500" }], "currency-lg": ["20px", { "lineHeight": "26px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-badge": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "700" }] } } } }</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/95 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="bg-primary text-on-primary"><div class="max-w-7xl mx-auto px-gutter py-space-xs flex items-center justify-between text-body-sm font-body-sm"><div class="flex items-center gap-space-sm"><span class="material-symbols-outlined text-body-md">local_shipping</span><span>Gratis Ongkir min. belanja Rp 50.000 | Pengiriman 2 Jam Sampai</span></div><div class="hidden md:flex items-center gap-space-md"><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-body-md">schedule</span>Buka 06:00 - 22:00 WIB</span><span class="text-outline-variant">|</span><span class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-body-md">verified</span>Garansi Segar 100%</span></div></div></div><div class="max-w-7xl mx-auto px-gutter h-16 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><a class="flex items-center gap-space-sm flex-shrink-0" data-path="home" href="#"><img alt="FreshCart Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2z-U4oRzXT986YBBWsnE8bPvC7HhZIEtsrBhk_MGpVBG1mqnK24wMGSYblkOdIp4FJ4eXp9q92vOL_I0GnVbxwWdF2YfcWui2pEJiBVqwod9NwEanEuV2nrKmhKc_bjRXxjk-HcO9nCQHFaOgYmnUUurbkm8X2UP2zkNDjL4ee3EN8ArsSCBZg6kI64X1etHP9weENc1SGPZeIh17-xVbO8pQjdnNqudQc4ZDPZK_pme7Ligd6WTqjA"/><span class="font-headline-sm text-headline-sm text-primary font-bold tracking-tight">FreshCart</span></a><div class="hidden lg:flex items-center gap-space-xs px-space-sm py-space-xs rounded-lg bg-surface-container-low text-on-surface-variant text-body-sm font-body-sm cursor-pointer hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-body-md text-primary">location_on</span><div class="flex flex-col text-left leading-tight"><span class="text-label-caption font-label-caption text-on-surface-variant">Kirim ke:</span><span class="font-title-sm text-title-sm text-on-surface">Jakarta Selatan</span></div><span class="material-symbols-outlined text-body-md">expand_more</span></div></div><div class="flex-1 max-w-2xl mx-space-sm hidden sm:flex items-center"><div class="w-full flex items-center bg-surface-container-low rounded-lg p-space-xs shadow-[0_1px_3px_rgba(31,41,55,0.05)]"><div class="relative flex items-center px-space-sm text-on-surface-variant font-title-sm text-title-sm border-r border-outline-variant/30"><span class="cursor-pointer">Semua Kategori</span><span class="material-symbols-outlined text-body-md ml-space-xs">arrow_drop_down</span></div><div class="relative flex-1 flex items-center px-space-sm"><input class="w-full bg-transparent border-0 outline-none text-on-surface font-body-md text-body-md placeholder:text-outline" placeholder="Cari sayur hidroponik, apel fuji, susu segar..." type="text"/><span class="material-symbols-outlined text-primary cursor-pointer">search</span></div></div></div><div class="flex items-center gap-space-md flex-shrink-0"><a class="relative p-space-xs rounded-full hover:bg-surface-container-low transition-colors text-on-surface-variant hover:text-on-surface flex items-center justify-center" data-path="wishlist" href="#"><span class="material-symbols-outlined">favorite</span><span class="absolute top-0 right-0 w-4 h-4 bg-error text-on-error rounded-full text-label-caption font-label-badge flex items-center justify-center">4</span></a><a class="flex items-center gap-space-sm px-space-sm py-space-xs rounded-lg bg-surface-container-low hover:bg-surface-container-high text-on-surface transition-colors" data-path="cart" href="#"><div class="relative flex items-center"><span class="material-symbols-outlined text-primary">shopping_basket</span><span class="absolute -top-1 -right-2 px-1 bg-secondary text-on-secondary rounded-full text-label-caption font-label-badge">3</span></div><div class="hidden md:flex flex-col text-left leading-tight"><span class="text-label-caption font-label-caption text-on-surface-variant">Keranjang</span><span class="font-title-sm text-title-sm text-primary">Rp 145.000</span></div></a><div class="flex items-center gap-space-sm pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoHMRUFgBg37EqWZqn5J40kcvxP3NGC704i7EthF4X4vq1xIeKGtzstkelsoBdS39YWYValwgdKWT9NWbegOYpZq6KfoHqZUw3IfGGb5pgbLiYp12g2iQOQo-FQyDe1SQTSbonWPtfeYd7uHSjRuAxXlidmE-AtK_hUwz3W49AiFJTg9OQSnMgPe9kSJiwBAsEXsy0hZwTxd-zku2Vcmy8SY9D9ZkwqGpNqvQkrc0DlrT58hUYCJ2Hww"/><div class="hidden xl:flex flex-col text-left leading-tight"><span class="text-label-caption font-label-caption text-on-surface-variant">Member Gold</span><span class="font-title-sm text-title-sm text-on-surface">Halo, Sarah</span></div></div></div></div><div class="bg-surface-container-lowest shadow-[0_1px_4px_rgba(0,0,0,0.03)]"><div class="max-w-7xl mx-auto px-gutter"><nav class="flex items-center gap-space-sm overflow-x-auto py-space-xs scrollbar-none" data-active-classes="bg-primary-container text-on-primary-container font-bold rounded-lg"><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm whitespace-nowrap transition-colors flex items-center gap-space-xs" data-path="promo-spesial" href="#"><span class="material-symbols-outlined text-error text-body-md">local_fire_department</span>Promo Spesial</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm whitespace-nowrap transition-colors" data-path="sayur-segar" href="#">Sayur Segar</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm whitespace-nowrap transition-colors" data-path="buah-buahan" href="#">Buah</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm whitespace-nowrap transition-colors" data-path="daging-dan-unggas" href="#">Daging & Unggas</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm whitespace-nowrap transition-colors" data-path="susu-dan-telur" href="#">Susu & Telur</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm whitespace-nowrap transition-colors" data-path="sembako" href="#">Sembako</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm whitespace-nowrap transition-colors" data-path="minuman" href="#">Minuman</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm whitespace-nowrap transition-colors flex items-center gap-space-xs" data-path="organik" href="#"><span class="material-symbols-outlined text-primary text-body-md">eco</span>Organik</a><a class="px-space-sm py-space-xs text-on-surface-variant hover:text-on-surface font-title-sm text-title-sm whitespace-nowrap transition-colors" data-path="resep-dapur" href="#">Inspirasi Resep</a></nav></div></div></header><main class="w-full pt-32 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Announce & Value Ticker -->
+<section class="w-full bg-surface-container-high py-space-xs px-gutter">
+<div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-space-sm text-body-sm font-body-sm text-on-surface-variant">
+<div class="flex items-center gap-space-md">
+<span class="flex items-center gap-space-xs font-title-sm text-title-sm text-primary">
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">eco</span>
+          100% Mitra Tani Lokal
+        </span>
+<span class="hidden sm:inline text-outline-variant">•</span>
+<span class="hidden sm:flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-body-md text-secondary">bolt</span>
+          Panen Pagi, Tiba Siang
+        </span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 rounded-full bg-error text-on-error text-label-badge font-label-badge tracking-wider">HARI INI</span>
+<span class="text-on-surface font-title-sm text-title-sm">Voucher Pengguna Baru: <strong class="text-primary font-bold">FRESH30</strong> (Hemat s/d Rp 50.000)</span>
+</div>
+</div>
+</section>
+<!-- Hero Section with Layered Asymmetric Depth -->
+<section class="relative w-full overflow-hidden bg-surface py-space-lg lg:py-space-xl">
+<div class="max-w-7xl mx-auto px-gutter">
+<div class="relative rounded-xl bg-surface-container-lowest shadow-xl overflow-hidden">
+<!-- Ambient radial glow decorative layer -->
+<div class="absolute -right-24 -top-24 w-96 h-96 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-80 h-80 rounded-full bg-primary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 items-center gap-space-lg p-space-md sm:p-space-lg lg:p-space-xl relative z-10">
+<!-- Text Column -->
+<div class="lg:col-span-7 flex flex-col items-start gap-space-md">
+<div class="inline-flex items-center gap-space-xs px-space-md py-1 rounded-full bg-secondary-container text-on-secondary-fixed-variant shadow-sm">
+<span class="material-symbols-outlined text-body-md">verified</span>
+<span class="font-label-badge text-label-badge uppercase tracking-wider">Diskon Spesial Pengguna Baru 30%</span>
+</div>
+<h1 class="font-display-hero text-display-hero text-on-surface font-bold leading-tight tracking-tight">
+              Fresh Groceries, <br/>
+<span class="text-primary bg-gradient-to-r from-primary via-primary-container to-secondary bg-clip-text text-transparent">Healthier Living</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+              Pilihan sayur segar, buah organik, dan kebutuhan harian langsung dari petani lokal diantar higienis ke rumah Anda dalam 2 jam dengan standar mutu tanpa kompromi.
+            </p>
+<div class="flex flex-wrap items-center gap-space-md pt-space-xs w-full sm:w-auto">
+<a class="inline-flex items-center justify-center gap-space-xs px-space-lg py-3 rounded-lg bg-primary text-on-primary font-title-md text-title-md hover:bg-secondary transition-all shadow-md hover:shadow-lg active:scale-95" href="#flash-sale">
+<span>Belanja Sekarang</span>
+<span class="material-symbols-outlined text-body-lg">arrow_forward</span>
+</a>
+<a class="inline-flex items-center justify-center gap-space-xs px-space-md py-3 rounded-lg bg-surface-container-low hover:bg-surface-container text-on-surface font-title-sm text-title-sm transition-colors" href="#kategori">
+<span class="material-symbols-outlined text-primary text-body-md">category</span>
+<span>Jelajahi 1.200+ Produk</span>
+</a>
+</div>
+<!-- Quick Live Stats Pill -->
+<div class="grid grid-cols-3 gap-space-sm pt-space-sm w-full max-w-lg">
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-currency-lg text-currency-lg text-primary font-bold">100%</p>
+<p class="font-label-caption text-label-caption text-on-surface-variant">Garansi Kesegaran</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-currency-lg text-currency-lg text-primary font-bold">120 Mnt</p>
+<p class="font-label-caption text-label-caption text-on-surface-variant">Rata-rata Sampai</p>
+</div>
+<div class="p-space-sm rounded-lg bg-surface-container-low">
+<p class="font-currency-lg text-currency-lg text-primary font-bold">4.9 / 5</p>
+<p class="font-label-caption text-label-caption text-on-surface-variant">Dari 48k+ Pembeli</p>
+</div>
+</div>
+</div>
+<!-- Visual Column: Composite Organic Showcase -->
+<div class="lg:col-span-5 relative flex justify-center items-center">
+<div class="relative w-full aspect-[4/3] sm:aspect-square max-w-md rounded-xl overflow-hidden shadow-2xl bg-surface-container">
+<img class="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700" data-alt="A lush and mouthwatering bounty of farm-fresh organic grocery items including crispy green broccoli, ripe butter avocados, crimson tomatoes with water droplets, and fresh leafy greens arranged tastefully on a minimalist modern kitchen tabletop with soft morning daylight and subtle natural green ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDus9HIkUkbImwsX-Z_MgvsPoMgSGpxxNc1aucfIAurNtZXfrGoOZRUAa0i8dvGNc26271E9I5j3TGjv_Bwq9fAye1njX00tp9ux6IkatKu4gDrTraElgtcUih05P9XQOdmqMCFuEJ3Q3bzNWh1SZfBcEw_Edlh0R-yDO8RavzjDktHZkvOwMRyaIsUWhV61YcoJZcloS-B98c3TP-G0cVOhz6ZGaY6-8sssMWnA6_1pi3Hp2WZq2-_Ww"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/60 via-transparent to-transparent"></div>
+<!-- Floating Pill on Image -->
+<div class="absolute bottom-space-md left-space-md right-space-md p-space-sm bg-surface-container-lowest/90 backdrop-blur-md rounded-lg shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">nutrition</span>
+</div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface font-bold">Panen Subuh Ini</p>
+<p class="font-label-caption text-label-caption text-on-surface-variant">Ciwidey & Lembang, Bandung</p>
+</div>
+</div>
+<span class="px-space-xs py-1 rounded bg-primary-fixed text-on-primary-fixed font-label-badge text-label-badge">QC PASSED</span>
+</div>
+</div>
+<!-- Overlapping Float Card: Fast Delivery Badge -->
+<div class="absolute -top-4 -left-4 hidden sm:flex items-center gap-space-xs p-space-sm rounded-xl bg-surface-container-lowest shadow-xl">
+<span class="material-symbols-outlined text-secondary text-headline-sm animate-bounce">electric_moped</span>
+<div class="text-left">
+<p class="font-label-caption text-label-caption text-on-surface-variant">Kurir Dingin</p>
+<p class="font-title-sm text-title-sm text-primary font-bold">Kotak Berpendingin</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Popular Categories Grid -->
+<section class="w-full py-space-xl bg-surface" id="kategori">
+<div class="max-w-7xl mx-auto px-gutter space-y-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest font-bold">Jelajah Lengkap</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Kategori Pilihan</h2>
+</div>
+<a class="font-title-sm text-title-sm text-primary hover:text-secondary flex items-center gap-1 font-semibold group" href="#">
+<span>Lihat Semua 24 Kategori</span>
+<span class="material-symbols-outlined text-body-md group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+<!-- Categories 8-Item Bento Layout -->
+<div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-space-sm sm:gap-space-md">
+<!-- 1: Sayur Segar -->
+<a class="group flex flex-col items-center text-center p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all" href="#">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed/30 flex items-center justify-center mb-space-sm overflow-hidden group-hover:bg-secondary-fixed/50 transition-colors">
+<img class="w-12 h-12 object-cover rounded-full" data-alt="Vibrant fresh green broccoli florets and crisp romaine lettuce leaves, cleanly presented on light neutral surface, high resolution grocery shot." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_LJ8goYQA0FYg6xSc5ZgXK60PxE06K8axoShychGOPK0Yq7mlD2rtyOfNgz8bW3Kte7JIsn7PAMYAR3aLqAHczGhUl_XViFeXxb0qE_QcU37ZF4JbBF7YjeAlkD3BD8medmCDgWmHXyyyr3tCWfCZoGf_Px8JuCVsO--ZrCRSfCz-hrUHWWOo3rjmBLkLkX_hxAoEabqVCNv0nLYWsE3eOnLvrRYbjcpUJeeuNK1g5NtGlzS9-p7-nQ"/>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Sayur Segar</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">230+ Item</span>
+</a>
+<!-- 2: Buah-buahan -->
+<a class="group flex flex-col items-center text-center p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all" href="#">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-space-sm overflow-hidden group-hover:bg-surface-container-high transition-colors">
+<img class="w-12 h-12 object-cover rounded-full" data-alt="Fresh sliced avocados, sweet honey papayas, and bright red apples against a clear minimal background, appetizing supermarket produce photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ570ux6O7QZxYIpPjooFICrH3_uFOu-LyTEy1aIBKhFyjWYEjYaLrgB-ceQZkm4EQIXQWhKg3KkNFiyiHycEIks2RAkM-UfrRRknxFmUoLBXXjvX7Cgy6w-kqsEC1gT5bMPb7G0a4JpsqoQAP7-u-6brXOPmWKUk0FI2miLo0xOCypHymGNFJ0SOm2sECOR7JTDhOBOYxlSD81ZKhh1aBNQk6RrGaAPIsgtR7rsBNAWNKxK-6NQHtVg"/>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Buah Segar</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">180+ Item</span>
+</a>
+<!-- 3: Daging Segar -->
+<a class="group flex flex-col items-center text-center p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all" href="#">
+<div class="w-16 h-16 rounded-full bg-error-container/40 flex items-center justify-center mb-space-sm overflow-hidden group-hover:bg-error-container/70 transition-colors">
+<img class="w-12 h-12 object-cover rounded-full" data-alt="Premium fresh beef cuts and halal tender chicken breast fillets on a clean culinary butcher marble prep board." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlr1a2oPosaXE0b0kTKsoEA7IJDEj0bBHQkJJrO_t4XxTZHj5N_eLr3PeLx0zsAB_OTl2wMAcQiMrOq0TUXal5kkrbNL9z-QvghzvLFKiAvoxLaCq42qlHFElFtChJQM5Ncqx41osEhN9pPHDVgUkL49C6eZezOhsfodCpgyrq5ihuQ0e6fbZVhGIxKPwmUM3bvaib3h-SHElHjl3SDmiTT-tenWUwOhERMOq8ARgSBaIFyMMGW-9sLg"/>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Daging Segar</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">95+ Item</span>
+</a>
+<!-- 4: Susu & Telur -->
+<a class="group flex flex-col items-center text-center p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all" href="#">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-space-sm overflow-hidden group-hover:bg-surface-container-highest transition-colors">
+<img class="w-12 h-12 object-cover rounded-full" data-alt="Brown omega-3 farm fresh eggs in a clean carton beside a glass bottle of pasteurized fresh dairy milk with condensation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDX1kTP3ImekyaQBVhoF58w9XVzoMM-yXtJtPoA3VmzN7KoFAbXq-yj2coaO_nRpQPDQnbsOs1ThlmaD_wVQ1DwQ_BW7Wiw_YE7wPdB2uwtPCsplBUMk4tGoISgdeQgAsdaKQTGbZaTl5O5rV4JCyq82NQESfx9hyp714iZv9YqsvNrv1HPu9KzQHpxGqONXmDUr2ogoSeF2iAh-hL7ue_nhnQptcQOjAE9s4iHDMyFx59DGvE29SyRqQ"/>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Susu & Telur</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">110+ Item</span>
+</a>
+<!-- 5: Sembako Beras -->
+<a class="group flex flex-col items-center text-center p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all" href="#">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-space-sm overflow-hidden group-hover:bg-surface-container-high transition-colors">
+<img class="w-12 h-12 object-cover rounded-full" data-alt="Premium aromatic jasmine rice grains scooped in a clean natural wooden bowl beside a sealed bottle of cooking oil." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBen3gR_NWaFwvnfFmEDyodJorJitsoAusAx0qiIccinZZyEh84ctrcyY00krkChY4j0JrBTA4BOa6HFYnncxIAk5okWM8Tn19Mkel7VboqJgpfdmPctenxSDB15sDesFuzWEqHtRjzS72ifhr0zYqgCMQZIeVdYMnGEQb_VePDSDBxAuahdw6Nrch3zLRr2FYCUHuNo-52qT817W3mbYeZq-C5XHWd96iyZuZ5LYTk85cplD7BqxsmPg"/>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Sembako</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">150+ Item</span>
+</a>
+<!-- 6: Minuman Sehat -->
+<a class="group flex flex-col items-center text-center p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all" href="#">
+<div class="w-16 h-16 rounded-full bg-secondary-fixed/20 flex items-center justify-center mb-space-sm overflow-hidden group-hover:bg-secondary-fixed/40 transition-colors">
+<img class="w-12 h-12 object-cover rounded-full" data-alt="Cold pressed natural wellness juices in transparent bottles featuring citrus, spinach, and beet hues on clean kitchen studio counter." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_jnRy4_k8Zx-UP1_UvRck2qMQTTtCO6kdDmGbVfS_-KvSZsbuLRMMDTFhrgg-yhV5-7ji9ZilVbhNfmD519SPhRxqIaWakKA6k9Fs6Pbalm-3HrTgKKKAXh_fACyJrUneifY4W7iHx8PWlvweq4grD1VTpD74hqwnIiEDW08YH13D9pYcnwEYx5g7yFUmjm0Dyx6ZrfMtF2pe2v9MLFLGY1C2mUw1kSSBaf4viX4sD7cb_J1XWP6b2w"/>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Minuman</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">85+ Item</span>
+</a>
+<!-- 7: Bumbu Dapur -->
+<a class="group flex flex-col items-center text-center p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all" href="#">
+<div class="w-16 h-16 rounded-full bg-surface-container flex items-center justify-center mb-space-sm overflow-hidden group-hover:bg-surface-container-high transition-colors">
+<img class="w-12 h-12 object-cover rounded-full" data-alt="Shallots, garlic bulbs, red bird eye chilies, and fresh galangal aromatic Indonesian culinary cooking spices neatly arranged." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBri1UC5zLoWAbsMIAPKGelO7CFNaFeIITf-shUOVcVFqUDlNJVBppbpSUhJ8bjHzAK8o3BdueBorF1Nfpgi_HVrGwmfLtS2t4LTVXZAmCWoS-99u9uyQyhzB74MhS0v8ayFV51Wne1N-v2mofMl_Tc4d3OgkYfSDEi_AOwPJtuJ9Nj0xaCijkpyNBP2KzaNW36Zx8E5nkrynAWKbJ-LI_y8-F68K3crmspn9c2XKbTVHmBHVXd_NDI2w"/>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Bumbu Dapur</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">140+ Item</span>
+</a>
+<!-- 8: Makanan Beku -->
+<a class="group flex flex-col items-center text-center p-space-md rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md hover:-translate-y-1 transition-all" href="#">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center mb-space-sm overflow-hidden group-hover:bg-surface-container-highest transition-colors">
+<img class="w-12 h-12 object-cover rounded-full" data-alt="Gourmet frozen edamame beans and dim sum dumplings neatly presented on frost-free minimalist tray." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1AC197FVOBQpBYZrXsC1OUTrVUkED_jHLLGZQbEMCpVLTcFidE8UwFlKfq67e6WQSkXJlzq9eMwFrtzYKSsMfj6VjhizoUuiAlXlf7kxYW8NHH-7UYJVHHmJVY4FWRXpo-XabL_jgAbK55QGCaN5ezrz-40ObnTj7Mk1NYAr_0h5F9ifGjONuU1fMfuERLagNASEbFRrLoVZAB5tSPmHdBS0flJ9IRM_laWgVfiziPXBMY_4Ddgf6BQ"/>
+</div>
+<span class="font-title-sm text-title-sm text-on-surface font-semibold group-hover:text-primary transition-colors">Makanan Beku</span>
+<span class="font-label-caption text-label-caption text-on-surface-variant mt-0.5">70+ Item</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Flash Sale Section -->
+<section class="w-full py-space-xl bg-surface-container-low" id="flash-sale">
+<div class="max-w-7xl mx-auto px-gutter space-y-space-lg">
+<!-- Flash Sale Header with Live Timer -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-space-md p-space-md sm:p-space-lg rounded-xl bg-surface-container-lowest shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-xl bg-error text-on-error flex items-center justify-center shadow-md">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-md text-headline-md text-on-surface font-bold">Kilat Flash Sale</h2>
+<span class="px-space-xs py-0.5 rounded bg-error-container text-on-error-container text-label-badge font-label-badge">DISKON S/D 45%</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Stok terbatas untuk pasokan segar pagi ini.</p>
+</div>
+</div>
+<!-- Timer Badges -->
+<div class="flex items-center gap-space-xs self-start md:self-auto">
+<span class="font-title-sm text-title-sm text-on-surface-variant mr-space-xs">Berakhir Dalam:</span>
+<div class="px-space-sm py-1.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-currency-md text-currency-md font-mono" id="fs-hours">04</div>
+<span class="font-bold text-on-surface">:</span>
+<div class="px-space-sm py-1.5 rounded-lg bg-inverse-surface text-inverse-on-surface font-currency-md text-currency-md font-mono" id="fs-minutes">12</div>
+<span class="font-bold text-on-surface">:</span>
+<div class="px-space-sm py-1.5 rounded-lg bg-error text-on-error font-currency-md text-currency-md font-mono" id="fs-seconds">35</div>
+</div>
+</div>
+<!-- Flash Sale 4-Column Product Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Item 1: Brokoli Organik -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-surface-container overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up shot of lush green organic broccoli floret with fine crisp water beads, resting on clean white kitchen surface under natural morning light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQSrk9jV9ZmOMqvR3B3TcTEtg_Ww_BXBjZI_sLYwDcF94egGrp-Xo7VUHDCj9TmU6lxRuwsc16EcdhwxaPZtjwNjjvmHlkhBWWWybEmU0PoI-PmKiYcG46JXuzgLwkX9VpjNN_dgoeprKDhXXp0sWcRIxPTgAleP1xMZ9AwTinXEMcl2QjaoLT7YLWf62I7F40MDBwA_NEzumOaMz5Mkf2z_xeJaeEhykFHzZ8OCIFxzUNFBSnWVFm1w"/>
+<span class="absolute top-2 left-2 px-space-xs py-1 rounded bg-error text-on-error font-label-badge text-label-badge shadow-sm">-32%</span>
+<span class="absolute top-2 right-2 p-1.5 rounded-full bg-surface-container-lowest/80 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-body-md">favorite</span>
+</span>
+<div class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-primary-fixed text-on-primary-fixed font-label-caption text-label-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">eco</span>Organik
+              </div>
+</div>
+<div class="space-y-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">500 gram / ikat</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors line-clamp-1">Brokoli Organik Ciwidey</h3>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-currency-lg text-currency-lg text-primary font-bold">Rp 18.500</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Rp 27.200</span>
+</div>
+</div>
+<!-- Progress Bar Sold -->
+<div class="mt-space-sm space-y-1">
+<div class="flex justify-between font-label-caption text-label-caption text-on-surface-variant">
+<span>Terjual 48/60</span>
+<span class="text-error font-bold">Sisa 12</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary rounded-full" style="width: 80%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-md" id="action-box-1">
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-primary hover:bg-secondary text-on-primary font-title-sm text-title-sm flex items-center justify-center gap-space-xs transition-colors shadow-sm" onclick="handleAddToCart(1, 'Brokoli Organik Ciwidey', '18.500')">
+<span class="material-symbols-outlined text-body-md">add_shopping_cart</span>
+<span>+ Keranjang</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Alpukat Mentega -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-surface-container overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Rich golden-green creamy ripe Indonesian butter avocado sliced open showing perfect pit, pristine kitchen background with gentle ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0B9I96lhl7s2eGWWTM0yg98HTtr0-fsmXD_dANde0sKI0K64_dEjob7fAX19TbB-sfTvTYmBkmQvnOMENHBQJVXFFPEWgqMbMGZkwFXYtAZRdUKp155bzp_LBha_NWqVXkKGLD_HPKtmM9p4n5DADnju22ry1lc2-FrBFY9Yr8r-xMnjx3_3r-jxaFji9YG4sc7fNoX0gqQ4ioKGqn1-zzJCcSZKMhr3Gos4MFluSU8xI-mKxw75FEA"/>
+<span class="absolute top-2 left-2 px-space-xs py-1 rounded bg-error text-on-error font-label-badge text-label-badge shadow-sm">-25%</span>
+<span class="absolute top-2 right-2 p-1.5 rounded-full bg-surface-container-lowest/80 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-body-md">favorite</span>
+</span>
+<div class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-secondary-fixed text-on-secondary-fixed font-label-caption text-label-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified</span>Grade A Super
+              </div>
+</div>
+<div class="space-y-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 kg (isi 3-4 buah)</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors line-clamp-1">Alpukat Mentega Super</h3>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-currency-lg text-currency-lg text-primary font-bold">Rp 32.000</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Rp 42.500</span>
+</div>
+</div>
+<!-- Progress Bar Sold -->
+<div class="mt-space-sm space-y-1">
+<div class="flex justify-between font-label-caption text-label-caption text-on-surface-variant">
+<span>Terjual 92/100</span>
+<span class="text-error font-bold">Sisa 8!</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-error to-error-container rounded-full" style="width: 92%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-md" id="action-box-2">
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-primary hover:bg-secondary text-on-primary font-title-sm text-title-sm flex items-center justify-center gap-space-xs transition-colors shadow-sm" onclick="handleAddToCart(2, 'Alpukat Mentega Super', '32.000')">
+<span class="material-symbols-outlined text-body-md">add_shopping_cart</span>
+<span>+ Keranjang</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Daging Sapi Tenderloin -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-surface-container overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Prime cut tenderloin beef fillet steak fresh and chilled on black slate board, garnished with rosemary sprig, gourmet studio lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7qPrZzLpFBWoYvEC23EHm17agy78fFHeU861kLjJzbthKZk-bdCNZ8ABVAMkWxTpKCHG9j0pYzO_qZlHNLyX5G-Dw2EAs2Q8ZAh_-iKoBWpxRMgzZC0RrajPG61t-TMyI9AjLFNIy-R25VfxGFunvl7Z32wyIytL2UNsH8PwLAiIQVARVQoymhyrDwpgv7WBFOpdxnZ1ozoWC5LEXANJ3SiT2bPY6H8ifWEX4ESxZW5gTeJmI6r3K5g"/>
+<span class="absolute top-2 left-2 px-space-xs py-1 rounded bg-error text-on-error font-label-badge text-label-badge shadow-sm">-20%</span>
+<span class="absolute top-2 right-2 p-1.5 rounded-full bg-surface-container-lowest/80 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-body-md">favorite</span>
+</span>
+<div class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-surface-container-highest text-on-surface font-label-caption text-label-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">ac_unit</span>Rantai Dingin
+              </div>
+</div>
+<div class="space-y-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">500 gram (Vacuum Pack)</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors line-clamp-1">Daging Sapi Tenderloin Segar</h3>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-currency-lg text-currency-lg text-primary font-bold">Rp 74.000</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Rp 92.500</span>
+</div>
+</div>
+<!-- Progress Bar Sold -->
+<div class="mt-space-sm space-y-1">
+<div class="flex justify-between font-label-caption text-label-caption text-on-surface-variant">
+<span>Terjual 35/50</span>
+<span class="text-on-surface-variant font-bold">Sisa 15</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary rounded-full" style="width: 70%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-md" id="action-box-3">
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-primary hover:bg-secondary text-on-primary font-title-sm text-title-sm flex items-center justify-center gap-space-xs transition-colors shadow-sm" onclick="handleAddToCart(3, 'Daging Sapi Tenderloin Segar', '74.000')">
+<span class="material-symbols-outlined text-body-md">add_shopping_cart</span>
+<span>+ Keranjang</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Susu Segar Pasteurisasi -->
+<div class="group flex flex-col justify-between rounded-xl bg-surface-container-lowest p-space-md shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+<div>
+<div class="relative w-full aspect-square rounded-lg bg-surface-container overflow-hidden mb-space-sm">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Chilled 1 liter clear bottle of fresh pasteurized whole cow milk with condensation drops, pure white aesthetic with wooden farm kitchen background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeFL4_eapEZ4zHruQBkZ0-_e_L8hz3oPJUaVd2EzEUR5B7SmCOfTzHOsig5JFu7goJxTG8ZnAUysIGTDO0FZCs4wwnXYvEFRmZ4mJqswFbWEKsGsu1x4SSpXDzGn5M4a92HROl4JeDrZjS_0CAwLyLnRNPWr69U3TZ2lV-DDI1N-Mx7Tt9TjE2mUDDDWJ1yAM0l7UOdWzZYvuxO_T_rdGk6STUk2eDcs-U8RdSNn6wmcW-JLkM6sYZxg"/>
+<span class="absolute top-2 left-2 px-space-xs py-1 rounded bg-error text-on-error font-label-badge text-label-badge shadow-sm">-18%</span>
+<span class="absolute top-2 right-2 p-1.5 rounded-full bg-surface-container-lowest/80 hover:bg-surface-container-lowest text-on-surface-variant hover:text-error transition-colors cursor-pointer">
+<span class="material-symbols-outlined text-body-md">favorite</span>
+</span>
+<div class="absolute bottom-2 left-2 px-space-xs py-0.5 rounded bg-tertiary-fixed text-on-tertiary-fixed font-label-caption text-label-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">health_and_safety</span>Murni 100%
+              </div>
+</div>
+<div class="space-y-1">
+<span class="font-body-sm text-body-sm text-on-surface-variant">1 Liter (Dingin)</span>
+<h3 class="font-title-md text-title-md text-on-surface font-bold group-hover:text-primary transition-colors line-clamp-1">Susu Segar Pasteurisasi Alami</h3>
+<div class="flex items-baseline gap-space-xs pt-1">
+<span class="font-currency-lg text-currency-lg text-primary font-bold">Rp 24.500</span>
+<span class="font-body-sm text-body-sm text-outline line-through">Rp 29.900</span>
+</div>
+</div>
+<!-- Progress Bar Sold -->
+<div class="mt-space-sm space-y-1">
+<div class="flex justify-between font-label-caption text-label-caption text-on-surface-variant">
+<span>Terjual 60/80</span>
+<span class="text-on-surface-variant font-bold">Sisa 20</span>
+</div>
+<div class="w-full h-2 rounded-full bg-surface-container-high overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary to-primary rounded-full" style="width: 75%;"></div>
+</div>
+</div>
+</div>
+<div class="pt-space-md" id="action-box-4">
+<button class="w-full py-2.5 px-space-sm rounded-lg bg-primary hover:bg-secondary text-on-primary font-title-sm text-title-sm flex items-center justify-center gap-space-xs transition-colors shadow-sm" onclick="handleAddToCart(4, 'Susu Segar Pasteurisasi Alami', '24.500')">
+<span class="material-symbols-outlined text-body-md">add_shopping_cart</span>
+<span>+ Keranjang</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Live Toast Notification Bar -->
+<div class="fixed bottom-6 right-6 z-50 transform translate-y-24 opacity-0 transition-all duration-300 pointer-events-none" id="cart-toast">
+<div class="flex items-center gap-space-sm px-space-md py-space-sm rounded-xl bg-on-surface text-inverse-on-surface shadow-2xl">
+<span class="material-symbols-outlined text-secondary-fixed">check_circle</span>
+<span class="font-body-md text-body-md font-semibold" id="toast-text">Produk ditambahkan ke keranjang!</span>
+</div>
+</div>
+<!-- Keunggulan FreshCart (Why Choose Us) -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-gutter space-y-space-lg">
+<div class="text-center max-w-2xl mx-auto space-y-space-xs">
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest font-bold">Komitmen Kualitas</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Keunggulan Belanja di FreshCart</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Kami memangkas rantai pasok panjang agar sayur & buah sampai di dapur Anda dengan kesegaran maksimal.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Benefit 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/40 text-on-secondary-fixed-variant flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Garansi Kesegaran 100%</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Jika produk layu, cacat, atau rusak saat diterima, laporkan dalam 24 jam dan kami kembalikan dana secara instan tanpa ribet.</p>
+</div>
+<!-- Benefit 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/40 text-on-primary-fixed-variant flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">speed</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Pengiriman Ekspres 2 Jam</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Didukung 18 micro-fulfillment center di Jabodetabek, belanjaan siap diantar langsung oleh kurir dengan boks pendingin.</p>
+</div>
+<!-- Benefit 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-surface-container-high text-primary flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">nature_people</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Bebas Pestisida & Higienis</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hasil kurasi ketat laboratorium pangan, bebas residu pestisida kimia berbahaya, dan dikemas higienis berstandar HACCP.</p>
+</div>
+<!-- Benefit 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm hover:shadow-md transition-shadow flex flex-col items-start gap-space-sm">
+<div class="w-12 h-12 rounded-xl bg-error-container/50 text-error flex items-center justify-center shadow-sm">
+<span class="material-symbols-outlined text-headline-sm" style="font-variation-settings: 'FILL' 1;">loyalty</span>
+</div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Promo Spesial Harian</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dapatkan penawaran kilat, paket masak hemat mingguan, serta gratis ongkir tanpa syarat minimal belanja setiap hari Jumat.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Recipe Inspiration & Community Spotlight -->
+<section class="w-full py-space-xl bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-gutter space-y-space-lg">
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-xs">
+<div>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest font-bold">Dapur Sehat Keluarga</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Inspirasi Masak Hari Ini</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md">Beli bahan resep lengkap dalam 1 kali klik langsung masuk keranjang Anda.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-space-md">
+<!-- Recipe 1 -->
+<div class="group rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Bowl of wholesome stir-fried organic broccoli with garlic and tender beef slices garnished with sesame seeds on dining table." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJSAeysREqu32GTYneXJdXJL2_vIlU6NzSfCRJkpYIb6mUkgAoJCo7uOnxMLgCivakF8rc6B_dc9LbgDFL-NWpBZg4nl_QSKbOODlZaZCHq0aPG6YaFU26czFR90Vc08148PaTSM6TbjcYXcJSumX3_derE4JXN3QEVlYRxYQDlt5QW5PxHMm29nlL3_obzCJvnCZFIoHGqE5jiVVqC085ESO2yDZLG0yij_IRv4Njr9V-qRt5VQaisg"/>
+<span class="absolute top-3 left-3 px-space-xs py-1 rounded bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-caption text-label-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>20 Menit
+            </span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-title-sm text-title-sm mb-1">
+<span class="material-symbols-outlined text-body-sm">skillet</span>
+<span>Menu Favorit Ibu</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Tumis Sapi Brokoli Saus Tiram</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Kombinasi serat brokoli renyah dan protein tinggi tenderloin sapi lokal pilihan.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<span class="font-label-caption text-label-caption text-on-surface-variant block">Paket 4 Porsi</span>
+<span class="font-currency-md text-currency-md text-primary font-bold">Rp 89.000</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-primary hover:text-on-primary text-primary font-title-sm text-title-sm transition-colors flex items-center gap-1" onclick="handleAddToCart('recipe-1', 'Paket Masak Tumis Sapi Brokoli', '89.000')">
+<span class="material-symbols-outlined text-body-md">shopping_bag</span>
+<span>Beli Paket</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recipe 2 -->
+<div class="group rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Healthy organic green power smoothie bowl topped with sliced creamy avocado, chia seeds, and fresh berries under sunlight." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlfAGVC8bRNHtgtP1lTHKwyLiakU5BhI-ni3mwE1MpHRwZLcQhPdlgwzqLFA3Iemp3xzAlTLz4EEHhZNoDb6qSJLWOL_XkHuKWaQpyaTAlW8Ehe5o6GRZxp-v8pZSRL6zgT1Oa8DCk4DD4hZOgrh24DifXkrRdQxjGXCbSWBkK381c1ktGz-uFbuaeZHhTVdnsF947ohhGjutGLE9etbZ8bVHK7URdZx3z3BA_e5WMdkZr_IM3349Raw"/>
+<span class="absolute top-3 left-3 px-space-xs py-1 rounded bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-caption text-label-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>10 Menit
+            </span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-title-sm text-title-sm mb-1">
+<span class="material-symbols-outlined text-body-sm">blender</span>
+<span>Diet Sehat & Energi</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Smoothie Bowl Alpukat & Susu Segar</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Sarapan padat nutrisi kaya antioksidan dan lemak baik untuk menjaga kebugaran tubuh sepanjang hari.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<span class="font-label-caption text-label-caption text-on-surface-variant block">Paket 2 Porsi</span>
+<span class="font-currency-md text-currency-md text-primary font-bold">Rp 48.500</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-primary hover:text-on-primary text-primary font-title-sm text-title-sm transition-colors flex items-center gap-1" onclick="handleAddToCart('recipe-2', 'Paket Masak Smoothie Alpukat', '48.500')">
+<span class="material-symbols-outlined text-body-md">shopping_bag</span>
+<span>Beli Paket</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Recipe 3 -->
+<div class="group rounded-xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-lg transition-all flex flex-col">
+<div class="relative h-48 w-full overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Steaming hot Indonesian chicken clear soup with fresh carrots, potatoes, and fragrant fried shallots in a traditional ceramic bowl." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCWpVfK6M_e7osOUcQp99AaKtGmFp1Cm4GQ1oumqCBsb3uhhkJB29a2hNyu6pAWHePHHXF4LIV5vIM7vTCs0m0361uQNN07_1tixNuxXX21q8q5WSLKJLpob7zsbwB-cAJkqng6LaboOwWssE_TtHHh0I5OcVA_gK39wlk_QVKHND1rcJx-tgiIpCbE-xqA14HwMovVfbj1oEudIikFWx-eqsEmXA-jsBr5nS9AzjYfy-n0R8cW_yL_Xg"/>
+<span class="absolute top-3 left-3 px-space-xs py-1 rounded bg-inverse-surface/80 backdrop-blur-sm text-inverse-on-surface font-label-caption text-label-caption flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">timer</span>30 Menit
+            </span>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between space-y-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-title-sm text-title-sm mb-1">
+<span class="material-symbols-outlined text-body-sm">soup_kitchen</span>
+<span>Hangat & Menyehatkan</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-bold group-hover:text-primary transition-colors">Sup Ayam Sayuran Komplit</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">Kuah kaldu ayam kampung segar dengan sayur wortel, buncis, kembang kol, dan taburan bawang goreng.</p>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<div>
+<span class="font-label-caption text-label-caption text-on-surface-variant block">Paket 5 Porsi</span>
+<span class="font-currency-md text-currency-md text-primary font-bold">Rp 62.000</span>
+</div>
+<button class="px-space-md py-2 rounded-lg bg-surface-container-low hover:bg-primary hover:text-on-primary text-primary font-title-sm text-title-sm transition-colors flex items-center gap-1" onclick="handleAddToCart('recipe-3', 'Paket Masak Sup Ayam Sayur', '62.000')">
+<span class="material-symbols-outlined text-body-md">shopping_bag</span>
+<span>Beli Paket</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Real Customer Testimonials -->
+<section class="w-full py-space-xl bg-surface">
+<div class="max-w-7xl mx-auto px-gutter space-y-space-lg">
+<div class="flex flex-col sm:flex-row items-start sm:items-end justify-between gap-space-xs">
+<div>
+<span class="font-label-badge text-label-badge text-primary uppercase tracking-widest font-bold">Ulasan Nyata</span>
+<h2 class="font-headline-lg text-headline-lg text-on-surface font-bold">Dipercaya 48.000+ Keluarga</h2>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-title-sm text-title-sm text-on-surface font-bold ml-1">4.9 / 5.0 (Google & App Store)</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Review 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-amber-500 gap-0.5">
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">"Sayur brokoli dan alpukatnya beneran masih segar berembun pas sampai! Pengiriman ke Jaksel cuma butuh 1 jam 15 menit. Gak perlu repot ke supermarket lagi tiap pagi."</p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs border-t border-surface-container-high">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center font-bold text-on-secondary-fixed">
+              DW
+            </div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface font-bold">dr. Dinda Wulandari</p>
+<p class="font-label-caption text-label-caption text-on-surface-variant">Member Gold • Kebayoran Baru</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-amber-500 gap-0.5">
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">"Daging sapinya dingin sempurna saat diterima karena dikemas pakai ice gel dan thermal foil. Kualitas daging sangat empuk untuk steak makan malam keluarga."</p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs border-t border-surface-container-high">
+<div class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center font-bold text-on-primary-fixed">
+              RH
+            </div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface font-bold">Reza Hardian</p>
+<p class="font-label-caption text-label-caption text-on-surface-variant">Member Reguler • BSD Tangerang</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col justify-between space-y-space-md">
+<div class="space-y-space-sm">
+<div class="flex text-amber-500 gap-0.5">
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-body-md" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface">"Fitur paket resepnya inovatif banget, tinggal sekali klik langsung terbeli semua bahannya dengan takaran pas. Menghemat waktu belanja mingguan saya sampai 80%."</p>
+</div>
+<div class="flex items-center gap-space-sm pt-space-xs border-t border-surface-container-high">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center font-bold text-on-tertiary-fixed">
+              SN
+            </div>
+<div>
+<p class="font-title-sm text-title-sm text-on-surface font-bold">Siti Nurhaliza</p>
+<p class="font-label-caption text-label-caption text-on-surface-variant">Member Platinum • Jakarta Barat</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Client-side Script for Timer & Cart Counter -->
+<script>
+    // Flash sale countdown timer logic
+    (function initTimer() {
+      let hours = 4;
+      let minutes = 12;
+      let seconds = 35;
+
+      const hEl = document.getElementById('fs-hours');
+      const mEl = document.getElementById('fs-minutes');
+      const sEl = document.getElementById('fs-seconds');
+
+      if (!hEl || !mEl || !sEl) return;
+
+      setInterval(() => {
+        if (seconds > 0) {
+          seconds--;
+        } else {
+          if (minutes > 0) {
+            minutes--;
+            seconds = 59;
+          } else {
+            if (hours > 0) {
+              hours--;
+              minutes = 59;
+              seconds = 59;
+            }
+          }
+        }
+        hEl.textContent = String(hours).padStart(2, '0');
+        mEl.textContent = String(minutes).padStart(2, '0');
+        sEl.textContent = String(seconds).padStart(2, '0');
+      }, 1000);
+    })();
+
+    // Interactive Add to Cart & Stepper Transition
+    function handleAddToCart(id, name, price) {
+      const container = document.getElementById('action-box-' + id);
+      if (container) {
+        container.innerHTML = `
+          <div class="w-full flex items-center justify-between p-1 bg-surface-container-low rounded-lg shadow-inner">
+            <button onclick="updateQty(${id}, -1)" class="w-8 h-8 rounded-lg bg-surface-container-lowest hover:bg-surface-container text-on-surface font-bold flex items-center justify-center transition-colors shadow-sm">
+              <span class="material-symbols-outlined text-body-md">remove</span>
+            </button>
+            <span id="qty-${id}" class="font-title-md text-title-md text-on-surface font-bold">1</span>
+            <button onclick="updateQty(${id}, 1)" class="w-8 h-8 rounded-lg bg-primary hover:bg-secondary text-on-primary font-bold flex items-center justify-center transition-colors shadow-sm">
+              <span class="material-symbols-outlined text-body-md">add</span>
+            </button>
+          </div>
+        `;
+      }
+
+      showToast(name + ' berhasil ditambahkan!');
+    }
+
+    function updateQty(id, delta) {
+      const qtyEl = document.getElementById('qty-' + id);
+      if (!qtyEl) return;
+      let current = parseInt(qtyEl.textContent, 10);
+      current += delta;
+      if (current <= 0) {
+        const container = document.getElementById('action-box-' + id);
+        if (container) {
+          container.innerHTML = `
+            <button onclick="handleAddToCart(${id}, 'Item', '')" class="w-full py-2.5 px-space-sm rounded-lg bg-primary hover:bg-secondary text-on-primary font-title-sm text-title-sm flex items-center justify-center gap-space-xs transition-colors shadow-sm">
+              <span class="material-symbols-outlined text-body-md">add_shopping_cart</span>
+              <span>+ Keranjang</span>
+            </button>
+          `;
+        }
+      } else {
+        qtyEl.textContent = current;
+      }
+    }
+
+    function showToast(text) {
+      const toast = document.getElementById('cart-toast');
+      const toastText = document.getElementById('toast-text');
+      if (toast && toastText) {
+        toastText.textContent = text;
+        toast.classList.remove('translate-y-24', 'opacity-0');
+        toast.classList.add('translate-y-0', 'opacity-100');
+
+        setTimeout(() => {
+          toast.classList.remove('translate-y-0', 'opacity-100');
+          toast.classList.add('translate-y-24', 'opacity-0');
+        }, 2500);
+      }
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl text-on-surface"><div class="bg-surface-container-high py-space-lg"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md"><div><h4 class="font-headline-sm text-headline-sm text-on-surface font-bold">Dapatkan Promo Eksklusif Setiap Minggu</h4><p class="font-body-md text-body-md text-on-surface-variant">Daftar newsletter dan nikmati voucher belanja Rp 25.000 pertama Anda.</p></div><div class="flex w-full md:w-auto max-w-md gap-space-xs"><input class="flex-1 px-space-md py-space-xs rounded-lg bg-surface-container-lowest text-on-surface border-0 outline-none text-body-md font-body-md shadow-[0_1px_2px_rgba(0,0,0,0.05)]" placeholder="Masukkan alamat email Anda" type="email"/><button class="px-space-lg py-space-xs bg-primary text-on-primary rounded-lg font-title-sm text-title-sm hover:bg-secondary transition-colors whitespace-nowrap">Langganan</button></div></div></div><div class="max-w-7xl mx-auto px-gutter py-space-xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-space-lg"><div class="lg:col-span-2 space-y-space-md"><div class="flex items-center gap-space-sm"><img alt="FreshCart Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2z-U4oRzXT986YBBWsnE8bPvC7HhZIEtsrBhk_MGpVBG1mqnK24wMGSYblkOdIp4FJ4eXp9q92vOL_I0GnVbxwWdF2YfcWui2pEJiBVqwod9NwEanEuV2nrKmhKc_bjRXxjk-HcO9nCQHFaOgYmnUUurbkm8X2UP2zkNDjL4ee3EN8ArsSCBZg6kI64X1etHP9weENc1SGPZeIh17-xVbO8pQjdnNqudQc4ZDPZK_pme7Ligd6WTqjA"/><span class="font-headline-sm text-headline-sm text-primary font-bold">FreshCart</span></div><p class="font-body-md text-body-md text-on-surface-variant pr-space-lg">Supermarket belanja bahan makanan online terlengkap di Indonesia. Segar langsung dari petani lokal, terkurasi higienis, dan diantar kilat ke depan pintu Anda.</p><div class="space-y-space-xs font-body-sm text-body-sm text-on-surface"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-body-md">call</span><span>Call Center: 0800-140-5678 (Bebas Pulsa)</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-body-md">mail</span><span>Bantuan: halo@freshcart.co.id</span></div><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-body-md">support_agent</span><span>Live Chat WhatsApp: +62 811-9988-7766</span></div></div></div><div><h5 class="font-title-md text-title-md text-on-surface font-semibold mb-space-md">Kategori Pilihan</h5><ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="sayur-segar" href="#">Sayur Organik & Hidroponik</a></li><li><a class="hover:text-primary transition-colors" data-path="buah-buahan" href="#">Buah Impor & Lokal</a></li><li><a class="hover:text-primary transition-colors" data-path="daging-dan-unggas" href="#">Daging Sapi & Ayam Segar</a></li><li><a class="hover:text-primary transition-colors" data-path="susu-dan-telur" href="#">Susu Murni & Telur Omega</a></li><li><a class="hover:text-primary transition-colors" data-path="sembako" href="#">Beras & Minyak Goreng</a></li></ul></div><div><h5 class="font-title-md text-title-md text-on-surface font-semibold mb-space-md">Layanan & Bantuan</h5><ul class="space-y-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-primary transition-colors" data-path="cara-belanja" href="#">Panduan Cara Belanja</a></li><li><a class="hover:text-primary transition-colors" data-path="cakupan-pengiriman" href="#">Area & Tarif Pengiriman</a></li><li><a class="hover:text-primary transition-colors" data-path="kebijakan-pengembalian" href="#">Garansi Kesegaran & Retur</a></li><li><a class="hover:text-primary transition-colors" data-path="faq" href="#">Tanya Jawab (FAQ)</a></li><li><a class="hover:text-primary transition-colors" data-path="kemitraan-petani" href="#">Gabung Mitra Petani</a></li></ul></div><div><h5 class="font-title-md text-title-md text-on-surface font-semibold mb-space-md">Unduh Aplikasi FreshCart</h5><p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">Belanja lebih praktis dengan notifikasi promo harian langsung di ponsel Anda.</p><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-space-xs rounded-lg shadow-[0_1px_2px_rgba(0,0,0,0.05)] cursor-pointer"><span class="material-symbols-outlined text-primary">shop</span><div><p class="text-label-caption font-label-caption text-on-surface-variant">Temukan di</p><p class="font-title-sm text-title-sm text-on-surface font-bold">Google Play</p></div></div><div class="flex items-center gap-space-sm bg-surface-container-lowest px-space-sm py-space-xs rounded-lg shadow-[0_1px_2px_rgba(0,0,0,0.05)] cursor-pointer"><span class="material-symbols-outlined text-primary">file_download</span><div><p class="text-label-caption font-label-caption text-on-surface-variant">Tersedia di</p><p class="font-title-sm text-title-sm text-on-surface font-bold">App Store</p></div></div></div></div></div><div class="border-t border-surface-container-high"><div class="max-w-7xl mx-auto px-gutter py-space-lg flex flex-col lg:flex-row items-center justify-between gap-space-lg"><div class="flex flex-col sm:flex-row items-center gap-space-md"><span class="font-title-sm text-title-sm text-on-surface font-semibold">Metode Pembayaran:</span><div class="flex items-center flex-wrap gap-space-xs"><span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface text-label-badge font-label-badge rounded shadow-[0_1px_2px_rgba(0,0,0,0.04)]">BCA</span><span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface text-label-badge font-label-badge rounded shadow-[0_1px_2px_rgba(0,0,0,0.04)]">Mandiri</span><span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface text-label-badge font-label-badge rounded shadow-[0_1px_2px_rgba(0,0,0,0.04)]">QRIS</span><span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface text-label-badge font-label-badge rounded shadow-[0_1px_2px_rgba(0,0,0,0.04)]">GoPay</span><span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface text-label-badge font-label-badge rounded shadow-[0_1px_2px_rgba(0,0,0,0.04)]">OVO</span><span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface text-label-badge font-label-badge rounded shadow-[0_1px_2px_rgba(0,0,0,0.04)]">ShopeePay</span></div></div><div class="flex flex-col sm:flex-row items-center gap-space-md"><span class="font-title-sm text-title-sm text-on-surface font-semibold">Mitra Kurir & Keamanan:</span><div class="flex items-center flex-wrap gap-space-xs"><span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface text-label-badge font-label-badge rounded shadow-[0_1px_2px_rgba(0,0,0,0.04)] flex items-center gap-1"><span class="material-symbols-outlined text-body-sm text-primary">electric_moped</span>Instant 2 Jam</span><span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface text-label-badge font-label-badge rounded shadow-[0_1px_2px_rgba(0,0,0,0.04)] flex items-center gap-1"><span class="material-symbols-outlined text-body-sm text-primary">lock</span>SSL 256-bit</span><span class="px-space-sm py-space-xs bg-surface-container-lowest text-on-surface text-label-badge font-label-badge rounded shadow-[0_1px_2px_rgba(0,0,0,0.04)] flex items-center gap-1"><span class="material-symbols-outlined text-body-sm text-primary">health_and_safety</span>ISO 22000 Segar</span></div></div></div></div><div class="bg-surface-container py-space-md"><div class="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-sm text-body-sm font-body-sm text-on-surface-variant"><p>© 2025 PT FreshCart Retail Nusantara. Hak cipta dilindungi undang-undang.</p><div class="flex items-center gap-space-md"><a class="hover:text-primary transition-colors" data-path="syarat-dan-ketentuan" href="#">Syarat & Ketentuan</a><a class="hover:text-primary transition-colors" data-path="kebijakan-privasi" href="#">Kebijakan Privasi</a><a class="hover:text-primary transition-colors" data-path="pemberitahuan-hukum" href="#">Pemberitahuan Hukum</a></div></div></div></footer></body></html>

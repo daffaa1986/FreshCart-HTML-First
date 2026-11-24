@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ilustrasi resep FreshCart">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eff4ff"/>
+      <stop offset="1" stop-color="#d9e6dd"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <circle cx="400" cy="270" r="150" fill="#ffffff" opacity="0.75"/>
+  <g fill="none" stroke="#00652c" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
+    <path d="M330 200 v120 a35 35 0 0 0 35 35 h10 a35 35 0 0 0 35 -35 v-120"/>
+    <path d="M365 200 v155"/>
+    <path d="M470 200 c-30 20 -40 60 -30 100 c8 32 30 50 55 55"/>
+    <path d="M470 200 v210"/>
+  </g>
+  <text x="400" y="480" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#00652c">FreshCart Recipes</text>
+  <text x="400" y="525" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="20" fill="#3f493f">Foto resep segera hadir</text>
+</svg>
