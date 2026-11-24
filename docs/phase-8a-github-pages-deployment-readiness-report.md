@@ -125,8 +125,25 @@ Then monitor the Actions tab for the deployment run.
 
 ---
 
-Do not claim deployment is complete until the actual GitHub Actions deployment succeeds.
+## Deployment Fix Update (Post-Audit)
 
-**Files created:** `docs/phase-8a-github-pages-deployment-readiness-report.md` (this report).
-**Build verified. No containers started. No secrets exposed.**
+### Issues Identified
+1. **Root-publishing workflow** (`.github/workflows/static.yml`) uploaded the entire repository (`path: '.'`), causing GitHub Pages to serve `README.md` instead of the app. **Removed.**
+2. **Double base-prefix** in `vite.config.js` `rewriteBaseLinksPlugin`: the broad `href="\//g` regex also rewrote Vite-generated asset URLs (`href="/FreshCart-HTML-First/assets/..."` → double prefix). **Fixed** to target only navigation paths: `href="\/(pages\/|index\.html)`.
+
+### Result After Fix
+- `npm run build`: PASS.
+- Double-prefix occurrences in `dist/`: 0.
+- Root-absolute nav hrefs remaining: 0.
+- `git diff --check`: PASS.
+
+### Files Changed
+- `.github/workflows/static.yml` — deleted.
+- `frontend/vite.config.js` — plugin regex narrowed.
+
+### Next Steps
+1. Commit and push these changes.
+2. Confirm the "Deploy FreshCart to GitHub Pages" workflow succeeds.
+3. Hard-refresh the Pages URL (`Ctrl+F5`).
+4. Verify the storefront (not README) loads with CSS/JS/navigation working.
 

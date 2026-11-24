@@ -14,12 +14,14 @@ function findHtmlFiles(dir) {
 
 const BASE = '/FreshCart-HTML-First/';
 
-// Rewrite root-absolute navigation links (href="/") to respect the configured base path.
+// Rewrite root-absolute navigation links (href="/pages/..." and href="/index.html")
+// to respect the configured base path. Only navigation paths are touched; Vite's
+// own asset URLs (already base-prefixed or hashed) are left untouched.
 function rewriteBaseLinksPlugin() {
   return {
     name: 'freshcart-rewrite-base-links',
     transformIndexHtml(html) {
-      return html.replace(/href="\//g, `href="${BASE}`);
+      return html.replace(/href="\/(pages\/|index\.html)/g, `href="${BASE}$1`);
     },
   };
 }
