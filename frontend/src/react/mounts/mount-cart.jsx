@@ -4,6 +4,7 @@ import { useCart } from '../hooks/useCart.jsx';
 import { formatRupiah } from '../../js/utils/currency.js';
 import { products, flashSaleProducts } from '../../js/data/products.js';
 import { getPurchasableItems } from '../../js/shared/order-processing.js';
+import { withBase } from '../../js/shared/paths.js';
 
 const catalogById = new Map([...products, ...flashSaleProducts].map((p) => [String(p.id), p]));
 
@@ -19,7 +20,7 @@ function CartApp() {
         <span aria-hidden="true" className="material-symbols-outlined text-5xl text-primary">shopping_basket</span>
         <h1 className="mt-3 text-headline-md font-bold">Keranjang masih kosong</h1>
         <p className="mt-2 text-body-md text-on-surface-variant">Yuk, pilih produk segar favoritmu.</p>
-        <a className="mt-5 inline-flex rounded-lg bg-primary px-5 py-3 font-semibold text-on-primary" href="/pages/products.html">Mulai Belanja</a>
+        <a className="mt-5 inline-flex rounded-lg bg-primary px-5 py-3 font-semibold text-on-primary" href={withBase('/pages/products.html')}>Mulai Belanja</a>
       </section>
     );
   }
@@ -63,7 +64,7 @@ function CartApp() {
         <hr className="my-4 border-outline-variant" />
         <div className="flex justify-between font-bold text-primary"><span>Total sementara</span><span>{formatRupiah(payableSubtotal)}</span></div>
         {validItems.length ? (
-          <a href="/pages/checkout.html" className="mt-5 block rounded-lg bg-primary px-4 py-3 text-center font-semibold text-on-primary hover:bg-secondary">Lanjut ke Checkout</a>
+          <a href={withBase('/pages/checkout.html')} className="mt-5 block rounded-lg bg-primary px-4 py-3 text-center font-semibold text-on-primary hover:bg-secondary">Lanjut ke Checkout</a>
         ) : (
           <button type="button" disabled className="mt-5 w-full cursor-not-allowed rounded-lg bg-surface-container px-4 py-3 text-center font-semibold text-on-surface-variant">Tidak ada produk yang dapat di-checkout</button>
         )}

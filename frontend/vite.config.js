@@ -12,9 +12,22 @@ function findHtmlFiles(dir) {
   });
 }
 
+const BASE = '/FreshCart-HTML-First/';
+
+// Rewrite root-absolute navigation links (href="/") to respect the configured base path.
+function rewriteBaseLinksPlugin() {
+  return {
+    name: 'freshcart-rewrite-base-links',
+    transformIndexHtml(html) {
+      return html.replace(/href="\//g, `href="${BASE}`);
+    },
+  };
+}
+
 export default defineConfig({
+  base: BASE,
   root,
-  plugins: [react()],
+  plugins: [react(), rewriteBaseLinksPlugin()],
   server: { host: '127.0.0.1', port: 5173, strictPort: true },
   build: {
     rollupOptions: {

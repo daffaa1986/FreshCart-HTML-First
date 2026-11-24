@@ -8,6 +8,7 @@ import { products } from '../../js/data/products.js';
 import { useCart } from '../hooks/useCart.jsx';
 import { addToCart } from '../../js/shared/cart-store.js';
 import { formatRupiah } from '../../js/utils/currency.js';
+import { withBase } from '../../js/shared/paths.js';
 
 function notifyToast(message) { if (typeof window !== 'undefined' && typeof window.dispatchEvent === 'function') window.dispatchEvent(new CustomEvent('freshcart:toast', { detail: message })); }
 
@@ -344,7 +345,7 @@ function DetailModal({ recipe, onClose, onOpen }) {
                 <button type="button" onClick={() => addIngredients(true)} disabled={isAdding || !ingredientRows.some((row) => row.available)} className="inline-flex items-center justify-center gap-1 rounded-lg bg-secondary-container px-space-md py-2.5 text-title-sm font-semibold text-on-secondary-fixed-variant hover:bg-secondary-fixed disabled:opacity-40">
                   Tambah semua yang tersedia
                 </button>
-                <a href="/pages/cart.html" className="inline-flex items-center justify-center gap-1 rounded-lg border border-outline-variant px-space-md py-2.5 text-title-sm font-semibold text-on-surface hover:border-primary hover:text-primary">
+                <a href={withBase('/pages/cart.html')} className="inline-flex items-center justify-center gap-1 rounded-lg border border-outline-variant px-space-md py-2.5 text-title-sm font-semibold text-on-surface hover:border-primary hover:text-primary">
                   Lihat keranjang
                 </a>
               </div>
@@ -581,7 +582,7 @@ export default function RecipeLibrary() {
       <section className="w-full py-space-lg bg-surface border-t border-surface-container-high">
         <div className="max-w-7xl mx-auto px-gutter flex flex-col md:flex-row items-center justify-between gap-space-md">
           <p className="text-body-md text-on-surface-variant">Nilai gizi adalah estimasi berdasarkan komposisi bahan (TKPI / USDA), bukan hasil uji laboratorium.</p>
-          <a className="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-lg bg-primary text-on-primary font-title-md text-title-md hover:bg-secondary transition-colors" href="/pages/products.html"><span>Belanja Bahan Resep</span><span aria-hidden="true" className="material-symbols-outlined text-body-lg">shopping_cart</span></a>
+          <a className="inline-flex items-center gap-space-xs px-space-lg py-3 rounded-lg bg-primary text-on-primary font-title-md text-title-md hover:bg-secondary transition-colors" href={withBase('/pages/products.html')}><span>Belanja Bahan Resep</span><span aria-hidden="true" className="material-symbols-outlined text-body-lg">shopping_cart</span></a>
         </div>
       </section>
 

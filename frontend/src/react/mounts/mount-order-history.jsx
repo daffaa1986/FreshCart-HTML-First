@@ -2,6 +2,7 @@ import { createRoot } from 'react-dom/client';
 import { useEffect, useState } from 'react';
 import { getOrders, subscribeOrders } from '../../js/shared/order-store.js';
 import { formatRupiah } from '../../js/utils/currency.js';
+import { withBase } from '../../js/shared/paths.js';
 
 function OrderHistoryApp() {
   const [orders, setOrders] = useState(() => getOrders());
@@ -14,7 +15,7 @@ function OrderHistoryApp() {
         <span aria-hidden="true" className="material-symbols-outlined text-5xl text-primary">receipt_long</span>
         <h2 className="mt-3 text-headline-sm font-bold">Belum ada pesanan</h2>
         <p className="mt-2 text-body-md text-on-surface-variant">Pesanan yang dibuat di FreshCart akan muncul di sini.</p>
-        <a href="/pages/products.html" className="mt-5 inline-flex rounded-lg bg-primary px-5 py-3 font-semibold text-on-primary">Mulai Belanja</a>
+        <a href={withBase('/pages/products.html')} className="mt-5 inline-flex rounded-lg bg-primary px-5 py-3 font-semibold text-on-primary">Mulai Belanja</a>
       </section>
     );
   }
@@ -48,7 +49,7 @@ function OrderHistoryApp() {
               </ul>
               <p className="mt-3 text-body-sm text-on-surface-variant">Kirim ke: {[address.address, address.district, address.city, address.province, address.postalCode].filter(Boolean).join(', ')}</p>
               <p className="mt-1 text-body-sm text-on-surface-variant">Pembayaran: {order.paymentMethod?.label} · Pengiriman: {order.shippingMethod?.label}</p>
-              <a href={`/pages/order-confirmation.html?order=${encodeURIComponent(order.orderId)}`} className="mt-4 inline-flex rounded-lg border border-primary px-4 py-2 text-title-sm font-semibold text-primary hover:bg-primary-fixed">Lihat Detail Pesanan</a>
+              <a href={withBase(`/pages/order-confirmation.html?order=${encodeURIComponent(order.orderId)}`)} className="mt-4 inline-flex rounded-lg border border-primary px-4 py-2 text-title-sm font-semibold text-primary hover:bg-primary-fixed">Lihat Detail Pesanan</a>
             </div>
           </details>
         );

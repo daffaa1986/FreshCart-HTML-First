@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { products } from '../../js/data/products.js';
 import ProductCard from './ProductCard.jsx';
+import { withBase } from '../../js/shared/paths.js';
 
 const MAX_PRICE_DEFAULT = 150000;
 const LIMIT_MIN = 5000;
@@ -126,7 +127,7 @@ export default function ProductCatalog() {
       maxPrice,
       page,
     });
-    const url = params.toString() ? `/pages/products.html?${params}` : '/pages/products.html';
+    const url = params.toString() ? withBase(`/pages/products.html?${params}`) : withBase('/pages/products.html');
     window.history.replaceState({}, '', url);
   }, [query, selectedCategories, organic, promo, hydroponic, pesticideFree, available, rating, sort, maxPrice, page]);
 

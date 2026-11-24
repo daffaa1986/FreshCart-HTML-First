@@ -1,13 +1,19 @@
 import { updateHeaderCart, subscribeCart } from './cart-store.js';
 import { updateHeaderWishlist, subscribeWishlist } from './wishlist-store.js';
 import { showToast } from './toast.js';
+import { withBase } from './paths.js';
 
 async function injectPartial(targetId, url) {
   const target = document.getElementById(targetId);
   if (!target) return;
-  const response = await fetch(url);
+  const response = await fetch(withBase(url));
   if (!response.ok) throw new Error(`Gagal memuat ${url}: ${response.status}`);
-  target.innerHTML = await response.text();
+  let html = await response.text();
+  // Rewrite root-absolute internal links/assets for project-site base path.
+  const base = import.meta.env.BASE_URL || '/';
+  const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+  html = html.replace(/(href|src)="\//g, `$1="${normalizedBase}`);
+  target.innerHTML = html;
 }
 
 export async function initLayout() {
@@ -53,7 +59,7 @@ export async function initLayout() {
     });
     const goSearch = () => {
       const query = search?.value?.trim();
-      if (query) window.location.href = `/pages/products.html?q=${encodeURIComponent(query)}`;
+      if (query) window.location.href = withBase(`/pages/products.html?q=${encodeURIComponent(query)}`);
     };
     const searchForm = document.querySelector('[role="search"]');
     if (searchForm) {

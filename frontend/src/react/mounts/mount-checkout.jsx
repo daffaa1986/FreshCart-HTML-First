@@ -10,6 +10,7 @@ import {
 import { validateCustomer } from '../../js/shared/checkout-validation.js';
 import { createSubmitGuard } from '../../js/shared/submit-guard.js';
 import { finalizeCheckoutAfterOrder } from '../../js/shared/checkout-completion.js';
+import { withBase } from '../../js/shared/paths.js';
 import { placeOrder, getPurchasableItems } from '../../js/shared/order-processing.js';
 
 const EMPTY_FORM = {
@@ -128,7 +129,7 @@ function CheckoutApp() {
       // Remove ONLY the products that were actually ordered. Unknown/invalid
       // items remain in the customer's cart. Guard stays locked until navigation.
       finalizeCheckoutAfterOrder(outcome.order, removeFromCart);
-      window.location.assign(`/pages/order-confirmation.html?order=${encodeURIComponent(outcome.order.orderId)}`);
+      window.location.assign(withBase(`/pages/order-confirmation.html?order=${encodeURIComponent(outcome.order.orderId)}`));
     } catch (error) {
       guardRef.current.release();
       setSubmitting(false);
@@ -236,7 +237,7 @@ function CheckoutApp() {
           {submitting ? 'Memproses pesanan…' : 'Buat Pesanan'}
         </button>
         <p className="mt-3 text-label-caption text-on-surface-variant">{DEMO_NOTICE}</p>
-        <a href="/pages/cart.html" className="mt-3 block text-center text-title-sm text-primary hover:underline">Kembali ke keranjang</a>
+        <a href={withBase('/pages/cart.html')} className="mt-3 block text-center text-title-sm text-primary hover:underline">Kembali ke keranjang</a>
       </aside>
     </form>
   );

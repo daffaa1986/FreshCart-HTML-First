@@ -3,6 +3,7 @@ import ProductCard from '../components/ProductCard.jsx';
 import { useWishlist } from '../hooks/useWishlist.jsx';
 import { products, flashSaleProducts } from '../../js/data/products.js';
 import { addToCart } from '../../js/shared/cart-store.js';
+import { withBase } from '../../js/shared/paths.js';
 
 const catalog = [...products, ...flashSaleProducts];
 
@@ -21,7 +22,7 @@ function WishlistApp() {
         <span aria-hidden="true" className="material-symbols-outlined text-5xl text-primary">favorite</span>
         <h1 className="mt-3 text-headline-md font-bold">Wishlist masih kosong</h1>
         <p className="mt-2 text-body-md text-on-surface-variant">Simpan produk favorit Anda untuk dibeli nanti.</p>
-        <a className="mt-5 inline-flex rounded-lg bg-primary px-5 py-3 font-semibold text-white" href="/pages/products.html">Jelajahi Produk</a>
+        <a className="mt-5 inline-flex rounded-lg bg-primary px-5 py-3 font-semibold text-white" href={withBase('/pages/products.html')}>Jelajahi Produk</a>
       </section>
     );
   }

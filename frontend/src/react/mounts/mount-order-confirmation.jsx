@@ -1,6 +1,7 @@
 import { createRoot } from 'react-dom/client';
 import { getOrderById } from '../../js/shared/order-store.js';
 import { formatRupiah } from '../../js/utils/currency.js';
+import { withBase } from '../../js/shared/paths.js';
 
 function Status({ children }) {
   return <span className="rounded-full bg-secondary-container px-space-sm py-1 text-label-caption font-semibold text-on-secondary-fixed-variant">{children}</span>;
@@ -17,8 +18,8 @@ function ConfirmationApp() {
         <h2 className="mt-3 text-headline-sm font-bold">Pesanan tidak ditemukan</h2>
         <p className="mt-2 text-body-md text-on-surface-variant">Periksa riwayat pesanan untuk melihat pesanan yang sudah dibuat.</p>
         <div className="mt-5 flex flex-wrap justify-center gap-3">
-          <a href="/pages/order-history.html" className="rounded-lg bg-primary px-5 py-3 font-semibold text-on-primary">Lihat Riwayat Pesanan</a>
-          <a href="/index.html" className="rounded-lg border border-primary px-5 py-3 font-semibold text-primary">Kembali ke Home</a>
+          <a href={withBase('/pages/order-history.html')} className="rounded-lg bg-primary px-5 py-3 font-semibold text-on-primary">Lihat Riwayat Pesanan</a>
+          <a href={withBase('/index.html')} className="rounded-lg border border-primary px-5 py-3 font-semibold text-primary">Kembali ke Home</a>
         </div>
       </section>
     );
@@ -79,8 +80,8 @@ function ConfirmationApp() {
       </section>
 
       <div className="flex flex-wrap gap-3">
-        <a href="/pages/order-history.html" className="rounded-lg bg-primary px-5 py-3 font-semibold text-on-primary hover:bg-secondary">Lihat Riwayat Pesanan</a>
-        <a href="/index.html" className="rounded-lg border border-primary px-5 py-3 font-semibold text-primary hover:bg-primary-fixed">Kembali ke Home</a>
+        <a href={withBase('/pages/order-history.html')} className="rounded-lg bg-primary px-5 py-3 font-semibold text-on-primary hover:bg-secondary">Lihat Riwayat Pesanan</a>
+        <a href={withBase('/index.html')} className="rounded-lg border border-primary px-5 py-3 font-semibold text-primary hover:bg-primary-fixed">Kembali ke Home</a>
       </div>
     </div>
   );
