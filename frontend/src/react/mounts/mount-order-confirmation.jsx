@@ -47,7 +47,7 @@ function ConfirmationApp() {
         <ul className="mt-3 divide-y divide-surface-container-high">
           {order.items.map((item, index) => (
             <li key={`${item.productId}-${index}`} className="flex items-center gap-3 py-3">
-              <img src={item.image || '/images/recipes/recipe-fallback.svg'} alt={item.name} className="h-14 w-14 rounded-lg object-cover" />
+              <img src={item.image ? withBase(item.image) : withBase('/images/recipes/recipe-fallback.svg')} alt={item.name} className="h-14 w-14 rounded-lg object-cover" />
               <div className="min-w-0 flex-1">
                 <p className="truncate text-body-sm font-semibold">{item.name}</p>
                 <p className="text-label-caption text-on-surface-variant">{item.quantity} × {formatRupiah(item.price)}</p>

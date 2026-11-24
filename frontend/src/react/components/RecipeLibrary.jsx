@@ -67,14 +67,14 @@ function currentSlug() {
 
 /** Image with a graceful, locally-owned fallback (never an invented path). */
 function RecipeImage({ recipe, className = '', alt }) {
-  const [src, setSrc] = useState(recipe.image || FALLBACK_RECIPE_IMAGE);
-  useEffect(() => setSrc(recipe.image || FALLBACK_RECIPE_IMAGE), [recipe.image]);
+  const [src, setSrc] = useState(withBase(recipe.image || FALLBACK_RECIPE_IMAGE));
+  useEffect(() => setSrc(withBase(recipe.image || FALLBACK_RECIPE_IMAGE)), [recipe.image]);
   return (
     <img
       src={src}
       alt={alt || `Foto resep ${recipe.name}`}
       loading="lazy"
-      onError={() => setSrc(FALLBACK_RECIPE_IMAGE)}
+      onError={() => setSrc(withBase(FALLBACK_RECIPE_IMAGE))}
       className={className}
     />
   );

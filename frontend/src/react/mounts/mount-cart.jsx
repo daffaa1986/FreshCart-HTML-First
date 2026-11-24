@@ -39,7 +39,7 @@ function CartApp() {
           const stock = current ? Number(current.stock) : 0;
           return (
             <article key={item.id} className={`fc-commerce-panel flex flex-col gap-4 sm:flex-row ${invalid ? 'border-error/40' : ''}`}>
-              <img src={item.image} alt={item.name} className="h-24 w-24 rounded-lg object-cover" />
+              <img src={item.image ? withBase(item.image) : ''} alt={item.name} className="h-24 w-24 rounded-lg object-cover" />
               <div className="min-w-0 flex-1">
                 <h2 className="font-semibold text-on-surface">{item.name}</h2>
                 <p className="mt-1 text-sm text-on-surface-variant">{formatRupiah(item.price)} · stok {current ? stock : 'tidak diketahui'}</p>

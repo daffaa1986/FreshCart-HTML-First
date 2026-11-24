@@ -1,6 +1,7 @@
 import { useCart } from '../hooks/useCart.jsx';
 import { useWishlist } from '../hooks/useWishlist.jsx';
 import { formatRupiah } from '../../js/utils/currency.js';
+import { withBase } from '../../js/shared/paths.js';
 
 export default function ProductCard({ product, variant = 'catalog' }) {
   const { items, addToCart, updateCartQuantity } = useCart();
@@ -12,7 +13,7 @@ export default function ProductCard({ product, variant = 'catalog' }) {
     <article className="group relative flex min-w-0 flex-col justify-between rounded-xl bg-surface-container-lowest p-space-md shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg">
       <div>
         <div className="relative mb-space-sm flex aspect-square w-full items-center justify-center overflow-hidden rounded-lg bg-surface-container-low">
-          <img src={product.image} alt={product.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <img src={product.image ? withBase(product.image) : ''} alt={product.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
           {(product.discount || product.badge) && <span className="absolute left-2 top-2 rounded bg-error px-2 py-1 text-label-badge text-white shadow-sm">{product.discount || product.badge}</span>}
           <button type="button" aria-label={wishlisted ? `Hapus ${product.name} dari wishlist` : `Tambah ${product.name} ke wishlist`} aria-pressed={wishlisted} className={`absolute right-2 top-2 flex h-11 w-11 items-center justify-center rounded-full shadow-sm transition-colors ${wishlisted ? 'bg-error text-on-error hover:bg-error/90' : 'bg-white/90 text-on-surface-variant hover:text-error'}`} onClick={() => toggleWishlist(product.id, product.name)}>
             <span aria-hidden="true" className="material-symbols-outlined text-body-md" style={wishlisted ? { fontVariationSettings: "'FILL' 1" } : undefined}>favorite</span>
